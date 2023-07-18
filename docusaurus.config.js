@@ -4,6 +4,11 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const isDev = process.env.NODE_ENV === 'development';
+
+const isDeployPreview =
+  !!process.env.NETLIFY && process.env.CONTEXT === 'deploy-preview';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '基于AIGC的区块链游戏',
@@ -28,9 +33,11 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-CN',
+    locales: ['zh-CN', 'en'],
   },
+
+  // plugins: ['@docusaurus/theme-search-algolia'],
 
   presets: [
     [
@@ -63,6 +70,20 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      algolia: {
+        appId: 'X1Z85QJPUV',
+        apiKey: 'bf7211c161e8205da2f933a02534105a',
+        indexName: 'docusaurus-2',
+        // 确保搜索结果与当前语言相关
+        contextualSearch: true,
+        replaceSearchResultPathname:
+          isDev || isDeployPreview
+            ? {
+                from: /^\/docs\/next/g,
+                to: '/docs',
+              }
+            : undefined,
+      },
       navbar: {
         title: '区块链游戏',
         logo: {
@@ -78,11 +99,17 @@ const config = {
           },
           {to: '/blog', label: '博客', position: 'left'},
           {
-            href: 'https://github.com/BlockchainGameWithAIGC/tutorial',
-            label: 'GitHub',
+            type: 'localeDropdown',
             position: 'right',
           },
-        ],
+          {
+            href: 'https://github.com/BlockchainGameWithAIGC/tutorial',
+            // label: 'GitHub',
+            'aria-label': 'Github repository',
+            className: 'header-github-link',
+            position: 'right',
+          },
+        ].filter(Boolean),
       },
       footer: {
         style: 'dark',
