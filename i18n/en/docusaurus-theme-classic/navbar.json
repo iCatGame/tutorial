@@ -1,6 +1,6 @@
 {
   "title": {
-    "message": "区块链游戏",
+    "message": "Blockchain Game",
     "description": "The title in the navbar"
   },
   "logo.alt": {
@@ -8,15 +8,11 @@
     "description": "The alt text of navbar logo"
   },
   "item.label.教程": {
-    "message": "教程",
+    "message": "Tutorial",
     "description": "Navbar item with label 教程"
   },
   "item.label.博客": {
-    "message": "博客",
+    "message": "Blog",
     "description": "Navbar item with label 博客"
-  },
-  "item.label.GitHub": {
-    "message": "GitHub",
-    "description": "Navbar item with label GitHub"
   }
 }

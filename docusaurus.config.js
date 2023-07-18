@@ -35,6 +35,11 @@ const config = {
   i18n: {
     defaultLocale: 'zh-CN',
     locales: ['zh-CN', 'en'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en-GB',
+      }
+    }
   },
 
   // plugins: ['@docusaurus/theme-search-algolia'],
@@ -71,9 +76,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       algolia: {
-        appId: 'X1Z85QJPUV',
-        apiKey: 'bf7211c161e8205da2f933a02534105a',
-        indexName: 'docusaurus-2',
+        appId: 'WDCFZSI80M',
+        apiKey: '45663b30a113579d60c5281e29f2a05b',
+        indexName: 'game-tutorial-beta',
         // 确保搜索结果与当前语言相关
         contextualSearch: true,
         replaceSearchResultPathname:
@@ -101,6 +106,16 @@ const config = {
           {
             type: 'localeDropdown',
             position: 'right',
+            dropdownItemsAfter: [
+              {
+                type: 'html',
+                value: '<hr style="margin: 0.3rem 0;">',
+              },
+              {
+                href: 'https://github.com/BlockchainGameWithAIGC/tutorial/tree/main/i18n',
+                label: '翻译为其他语言',
+              },
+            ],
           },
           {
             href: 'https://github.com/BlockchainGameWithAIGC/tutorial',

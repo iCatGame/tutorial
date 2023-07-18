@@ -3,16 +3,20 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.tutorialSidebar.category.Tutorial - Basics": {
-    "message": "Tutorial - Basics",
-    "description": "The label for category Tutorial - Basics in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.智能合约编写": {
+    "message": "智能合约编写",
+    "description": "The label for category 智能合约编写 in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Tutorial - Basics.link.generated-index.description": {
-    "message": "5 minutes to learn the most important Docusaurus concepts.",
-    "description": "The generated-index page description for category Tutorial - Basics in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.智能合约编写.link.generated-index.description": {
+    "message": "iCat智能合约编写",
+    "description": "The generated-index page description for category 智能合约编写 in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Tutorial - Extras": {
-    "message": "Tutorial - Extras",
-    "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.前端/后端": {
+    "message": "前端/后端",
+    "description": "The label for category 前端/后端 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.前端/后端.link.generated-index.description": {
+    "message": "使用next.js编写前后端",
+    "description": "The generated-index page description for category 前端/后端 in sidebar tutorialSidebar"
   }
 }
