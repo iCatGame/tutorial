@@ -4,19 +4,19 @@
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.智能合约编写": {
-    "message": "Smart Contract",
+    "message": "智能合约编写",
     "description": "The label for category 智能合约编写 in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.智能合约编写.link.generated-index.description": {
-    "message": "iCat Contract",
+    "message": "iCat智能合约编写",
     "description": "The generated-index page description for category 智能合约编写 in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.前端/后端": {
-    "message": "Frontend and Backend",
+    "message": "前端/后端",
     "description": "The label for category 前端/后端 in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.前端/后端.link.generated-index.description": {
-    "message": "Frondend and backend buiding with next.js",
+    "message": "使用next.js编写前后端",
     "description": "The generated-index page description for category 前端/后端 in sidebar tutorialSidebar"
   }
 }

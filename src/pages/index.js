@@ -15,12 +15,12 @@ function HomepageHeader() {
       <div className="container">
         <h1 className="hero__title">
           <Translate id='home.title'>
-          {siteConfig.title}
+          基于AIGC的区块链游戏
           </Translate>
           </h1>
         <p className="hero__subtitle">
           <Translate id='home.tagline'>
-          {siteConfig.tagline}
+            教程文档
           </Translate>
         </p>
         <div className={styles.buttons}>

@@ -2,10 +2,10 @@
 sidebar_position: 1
 ---
 
-# 教程简介
+# Tutorial
 
 <!-- Let's discover **Docusaurus in less than 5 minutes**. -->
-iCat 教程
+iCat Tutorial
 
 ## Getting Started
 
