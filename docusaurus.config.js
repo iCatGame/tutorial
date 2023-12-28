@@ -165,7 +165,7 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
-        additionalLanguages: ["solidity"],
+        additionalLanguages: ["solidity", "json", "shell-session"],
       },
     }),
 };

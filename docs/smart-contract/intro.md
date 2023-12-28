@@ -38,4 +38,6 @@ Solidity意义上的合约是代码（函数）和数据（状态）的集合，
 
 :::
 
-想要进一步学习solidity语言，我们建议参考[WTF acadamy](https://www.wtf.academy/solidity-start)的solidity教程。在掌握了solidity语言之后，我们就可以正式编写智能合约了。
+想要进一步学习solidity语言，我们建议参考[WTF acadamy](https://www.wtf.academy/solidity-start)的solidity教程。
+
+从下一小节开始，我们将开始着手准备项目。
