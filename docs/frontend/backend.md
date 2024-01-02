@@ -26,3 +26,9 @@ const options = {
 const res = await pinata.pinFileToIPFS(readableStreamForFile, options)
 console.log(res)
 ```
+
+:::tip 注意
+
+与标准的React项目不同，next.js的编译过程分为SSR和CSR两部分，所有component在编写过程中，养成良好习惯，头部加上`'use client';`
+
+:::
