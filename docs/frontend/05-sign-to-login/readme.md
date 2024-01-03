@@ -362,4 +362,10 @@ export default withIronSessionApiRoute(handler, ironOptions);
 点击`Send message`，并在钱包中签名，登录成功，通过开发人员工具，我们也可以清晰地看到在签名过程中调用的后端接口的过程。
 ![console](./img/console.png)
 
+:::warning
+
+实际上，签名是一个十分危险的行为，在每次签名之前一定要对签名内容以及签名所能赋予其他账户权限有多大，否则有可能造成资产损失。关于以太坊网络上一些常用的签名，请参见[这篇文章](https://mirror.xyz/rbtree.eth/y2oMRSSKy3kI-fYL9P2nAmJUXhxV1P2x4vAy_7D9-MM)。
+
+:::
+
 至此，签名登录功能编写完成。下一小节，我们将开始学习编写 Landing Page。
