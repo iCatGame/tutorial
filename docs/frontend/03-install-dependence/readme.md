@@ -26,15 +26,27 @@ npx create-next-app@13
 
 ### `app`
 
-`app`文件夹存放着
+`app`文件夹存放着页面组件。每个文件夹下可以有`page.jsx`和`layout.jsx`两个文件，`page.jsx`对应该文件夹的路由，`layout.jsx`用于设置该路由的框架。另外，`app`文件夹根目录下的`page.jsx`用于编写默认路由（即`./`），`layout.jsx`用于设置适用于所有页面的框架。
 
 ### `node_modules`
 
+用于存放项目依赖的 npm 模块，通过 `package.json` 中的配置安装。
+
 ### `public`
+
+ 用于存放静态资源，例如图片、字体等。这些文件不会经过Webpack处理，而是直接被复制到构建输出目录。
 
 ### `.gitignore`
 
+ Git 忽略配置文件，指定了不需要纳入版本控制的文件或目录。比如，我们可以将`.env`文件设置到`.gitignore`当中。
+
 ### `jsconfig.json`、`next.config.json`、`postcss.config.js`、`tailwind.config.js`
+
+Next.js 以及 tailwindcss 等的配置文件。
+
+### 其他文件夹
+
+在接下来的代码编写过程中，我们还会用到`component/`文件夹以用于编写可重用的 React 组件；`lib/`文件夹以存放项目用到的库；`pages/api/`文件夹以存放用于和数据库交互的后端代码。
 
 为了防止软件包版本不同导致接下来的教程失效，将上图中的`package.json`文件内容全部删除，然后替换为以下内容并保存：
 
