@@ -1,0 +1,9 @@
+{
+    "label": "AIGC 生成图像",
+    "position": 3,
+    "link": {
+      "type": "generated-index", 
+      "description": "在 Midjourney 中，灵活运用 prompt 生成需要的图像。"
+    }
+  }
+  
