@@ -136,8 +136,67 @@ export default function Page({ params }) {
 }
 ```
 
-
-
 :::
+
+### 编写搜索组件
+
+在[这里](../mint-egg-page/#页头headerapp)我们曾提到过，页头需要有一个搜索框，由于当时编写的组件还不完善，因此还不能添加。而现在我们就可以添加这个搜索框了。
+
+在`components`文件夹下创建新文件`Search.jsx`。并添加以下代码：
+
+```jsx title="Search.jsx"
+import { SearchOutlined } from "@ant-design/icons";
+import Link from "next/link";
+import { useState } from "react";
+
+export const Search = () => {
+  const [value, setValue] = useState("");
+
+  return (
+    <div className="flex justify-center items-center space-x-4">
+      <div className="bg-gray-200 h-[40px] flex item-center rounded-full">
+        <div className="flex flex-row items-center pl-3 space-x-3 w-full">
+          <SearchOutlined />
+          <input type='text' placeholder="查看其他人的iCat" className="bg-gray-200 rounded-full focus:outline-none w-full" value={value} onChange={a => {setValue(a.target.value)}}/>
+        </div>
+      </div> 
+      <Link href={`/user/${value}`}>
+        <button disabled={value == ""} className={`rounded-full text-neutral-100 h-[40px] font-[500] transition tracking-wide w-[150px] outline-none bg-blue-600 hover:bg-blue-700`}>
+          前往
+        </button>
+      </Link>
+    </div>
+  );
+};
+```
+
+打开`HeaderApp.jsx`，添加以下代码：
+
+```jsx title="HeaderApp.jsx"
+...
+import { Search } from './Search';
+
+const HeaderApp = () => {
+  ...
+  return (
+    <nav ...>
+      ...
+      <ul ...>
+        ...
+      </ul>
+      <div className='justify-center items-center min-w-[57%] max-w-2xl w-full hidden md:block'>
+        <Search />
+      </div>
+      ...
+    </nav>
+  )
+}
+
+export default HeaderApp;
+```
+
+这样就可以通过搜索框搜索来查看其他人的 iCat 啦！
+
+
 
 至此，他人主页页面编写完毕。
