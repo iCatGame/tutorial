@@ -1,0 +1,9 @@
+{
+    "label": "工具",
+    "position": 4,
+    "link": {
+      "type": "generated-index", 
+      "description": "本小节中将会介绍 Midjourney 生成图像之后对其进行调整的若干工具。"
+    }
+  }
+  
