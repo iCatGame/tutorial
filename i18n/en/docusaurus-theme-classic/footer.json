@@ -38,5 +38,9 @@
   "link.item.label.博客": {
     "message": "Blog",
     "description": "The label of footer link with label=博客 linking to /blog"
+  },
+  "link.item.label.github discussion": {
+    "message": "github discussion",
+    "description": "The label of footer link with label=github discussion linking to https://github.com/iCatGame/tutorial/discussions"
   }
 }

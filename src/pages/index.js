@@ -29,7 +29,7 @@ function HomepageHeader() {
             to="/docs/intro"
           >
             <Translate id='home.visitTutorial'>
-              预计用时 - 50min ⏱️
+              预计用时 - 7天 ⏱️
             </Translate>
           </Link>
         </div>

@@ -2,47 +2,20 @@
 sidebar_position: 1
 ---
 
-# Tutorial
+# Tutorial Introduction
 
-<!-- Let's discover **Docusaurus in less than 5 minutes**. -->
-iCat Tutorial
+## 👋 Welcome to the Tutorial
 
-## Getting Started
+Welcome everyone to this tutorial. Through this tutorial, you will learn how to systematically develop a DAPP (decentralized application), which in this tutorial is a blockchain game. To better study and complete this project, you should have some understanding of Solidity, terminal usage, JavaScript, and React.js. The remaining knowledge will be acquired in the upcoming lessons.
 
-Get started by **creating a new site**.
+## 🎮 What Are We Doing
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Since the birth of the first blockchain game, CryptoKitties, in 2017, the popularity of blockchain games has been enduring. Subsequently, games like Axie Infinity, StarShark, and others have become explosively popular.
 
-### What you'll need
+This tutorial aims to help traditional internet developers step into Web3.0 and develop their own blockchain game.
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## 💪 Getting Help
 
-## Generate a new site
+During the learning process, if you encounter any issues, feel free to submit issues or PRs to the [repo](https://github.com/iCatGame/tutorial) of this project, or participate in discussions.
 
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+If you find this project helpful, please give a star to our [repo](https://github.com/iCatGame/tutorial)!

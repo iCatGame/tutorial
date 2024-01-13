@@ -1,0 +1,46 @@
+---
+sidebar_position: 03
+---
+
+import start from "./img/pan_start_a.png";
+import up from "./img/pan_up_a.png";
+import down from "./img/pan_down_a.png";
+import left from "./img/pan_left_a.png";
+import right from "./img/pan_right_a.png";
+
+# 扩展图像
+
+“平移（Pan）”选项允许您沿选定方向扩展图像的画布，而不更改原始图像的内容。新扩展的画布将使用提示和原始图像的指导进行填充。
+
+## 使用
+
+[提高图像分辨率](../upscalers/)之后将出现`⬅️` `➡️` `⬆️` `⬇️`四个平移按钮。平移时，仅使用距离图像侧面最近的 512 个像素以及提示词来确定新部分。
+
+![平移按钮](./img/MJ_PanButtons.jpg)
+
+`提示词：A vibrant fantasy landscape`
+
+<div style={{ display: 'flex', justifyContent: 'space-between' }}>
+  <div>
+    <p>起始图像</p>
+    <img src={start} width={275} alt="起始图像" />
+  </div>
+  <div>
+    <p>向上平移</p>
+    <img src={up} width={275} alt="向上平移" />
+  </div>
+  <div>
+    <p>向下平移</p>
+    <img src={down} width={275} alt="向下平移" />
+  </div>
+</div>
+<div style={{ display: 'flex', justifyContent: 'space-between' }}>
+  <div>
+    <p>向左平移</p>
+    <img src={left} height={275} alt="向左平移" />
+  </div>
+  <div>
+    <p>向右平移</p>
+    <img src={right} height={275} alt="向右平移" />
+  </div>
+</div>
