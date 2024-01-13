@@ -414,7 +414,7 @@ function mint() public onlyRole(HATCH_ROLE) {
 :::
 
 ```solidity
-functioncanCheckIn(address _user) public view returns (bool) {
+function canCheckIn(address _user) public view returns (bool) {
     if (balanceOf(_user) == 0 && egg(eggContract).balanceOf(_user) == 0) {
         return false;
     }
