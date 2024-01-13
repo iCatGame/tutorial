@@ -4,32 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: '全栈开发',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        本教程提供包括前端、后端、智能合约的全栈开发教程，帮助 Web2 开发人员快速上手 Dapp 开发。
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: '结合 AIGC 技术',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        本教结合今天火热的 AIGC 技术，使用 Midjourney 为区块链开发人员提供快速上手游戏人物形象创造。
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: '使用全新技术栈',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        本教程基于最新最先进的 Wagmi/Viem 以及 RainbowKit 等技术栈，给开发人员提供更优的开发体验，给用户带来更加流畅的游戏体验。
       </>
     ),
   },
